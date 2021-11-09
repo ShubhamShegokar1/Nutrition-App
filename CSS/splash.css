@@ -1,0 +1,57 @@
+*{
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+}
+
+.bigImage img
+{
+    width: 60%;
+    height: 200px;
+    padding-top :209px;
+    margin-left: 20%;
+}
+
+.bigImage + div p
+{
+height: 60px;
+width: 85%;
+margin: auto;
+color:#263238;
+padding-top: 12%;
+font-weight:600;
+line-height: 30px;
+text-align: center;
+letter-spacing: 0.02em;
+font-size: 20px;
+}
+
+.skip
+{
+  display: grid;
+  grid-template-columns:39% 7% 7% 7% 40%;
+ 
+}
+
+.skip p
+{
+ color: #5A5A5A;
+ font-style: normal;
+ font-weight: bold;
+ font-size: 14px;
+ text-align: left;
+ padding-left: 10%;
+ width: 30%;
+}
+
+
+.skip :nth-child(2),:nth-child(3),:nth-child(4){
+  margin-top:53%;
+  text-align: center;
+}
+
+.skip :nth-child(5){
+    margin-top:2%;
+    text-align: right;
+    padding-right: 10%;
+}
+

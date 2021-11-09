@@ -1,0 +1,71 @@
+
+*{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding:0;
+}
+
+.heading
+{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;    
+    letter-spacing: 0.02em;
+    color: #000000;
+    display: flex;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.heading>:first-child
+{
+    width: 35%;
+    text-align: left;
+    padding-left: 5%;
+}
+.heading>:nth-child(2)
+{
+    width: 65%;
+    text-align: left;
+}
+
+.block
+{
+    background: #FEF7DC;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+    height: 104px;
+    width: 100%;
+  
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 18px;
+}
+
+.stepBox
+{
+    display: flex;
+}
+
+.stepBox>:first-child
+{
+  width: 15%;
+  text-align: right;
+  padding-top: 10%;
+}
+
+.stepBox>:nth-child(2)
+{
+  width: 65%;
+  padding-left: 5%;
+  padding-top: 8%;
+}
+
+.date
+{
+    padding-left: 20%;
+    color: #8A8A8A;
+    padding-top: 1%;
+}
