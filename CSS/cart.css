@@ -1,0 +1,232 @@
+body{
+    width: 376px;
+    font-family: Poppins;
+    margin: 0px;
+}
+#items,#caution,#offers,#bill,#address-div,#payment{
+    padding:10px 20px;
+
+}
+#caution{
+    display: flex;
+    margin: 30px auto;
+    background: #FCFCFC;
+    gap: 5%;
+    border-top: 1px solid #E6E6E6;
+    border-bottom: 1px solid #E6E6E6;
+}
+#toggle > i{
+    margin-top: 10px;
+    margin-right: -20px;
+}
+#caution p{
+    margin: 0px;
+}
+#text{
+    width:80%
+}
+.blackc{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #000000;
+
+}
+.grayc{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    color: #5E5E5E;
+}
+.fa-toggle-on,.fa-toggle-off{
+    color: gray;
+    font-size: 26px !important;
+    width: 54px;
+    height: 20px;
+}
+.bold-black,.fa-shopping-bag{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    padding-left: 5px;
+}
+
+.square{
+    width: 14px;
+    height: 14px;
+    border: 1px solid #4FAE51;
+    margin-top: 25px;
+}
+.circle{
+    width: 9px;
+    height: 9px;
+    background-color: #4FAE51;
+    border-radius: 4.5px;
+    margin:2.5px auto;
+}
+.three-button,#cart-items > div{
+    display: flex;
+}
+#cart-items > div {
+    gap: 5%;
+    padding: 0px 10px;
+    border-bottom: 1px solid #E6E6E6;
+}
+.three-button{
+    height: 32px;
+    width: 72px;
+    border-radius: 16px;
+    background: #FFF9F1;
+    border: 1px solid #FFA11B;
+    box-sizing: border-box;
+    box-shadow: 1px 0px 2px rgba(90, 90, 90, 0.18), 0px 2px 3px rgba(90, 90, 90, 0.18);
+    border-radius: 8px;
+    color: #FFA11B;
+    line-height: 32px;
+    margin-top: 20px;
+
+}
+.add,.plus,.minus{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+.add{
+    width: 50%;
+    color: black;
+}
+.plus{
+    width: 25%;
+}
+.minus{
+    width: 25%;
+}
+.dish{
+    padding: 15px 0px;
+    width: 63%;
+}
+.dish >p{
+    margin: 0px;
+    color: black;
+}
+.instruct > i{
+    color: gray;
+    font-size: 12px;
+    margin-right: 10px;
+}
+.instruct > p{
+    margin: 0px;
+    border-bottom: 1px dashed #5E5E5E;
+}
+.instruct{
+    display: flex;
+    margin: 20px 0px;
+}
+#items{
+    border-bottom: 2px solid #E6E6E6;
+}
+#offers img{
+    width: 22.4px ;
+    height: 22.4px;
+    padding-right: 10px;
+}
+#offers p{
+    margin: 0px;
+    padding-top: 4px;
+}
+#offers{
+    display: flex;
+}
+.orangec{
+    color: #FFA11B;
+    padding-left: 190px;
+}
+
+#bill{
+    margin-top: 10px;
+    width: 376px;
+    height: 145px;
+    background: #F6FBFA;
+    margin-bottom: 50px;
+}
+#bill p{
+    margin: 7px 0px;
+}
+.under{
+    border-bottom: 1px dotted #5E5E5E;
+}
+#bill > div{
+    display: flex;
+    gap: 45%;
+}
+#bill > div > p{
+    width: 30%;
+}
+#bill > p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+}
+.right {
+    text-align: center;
+}
+#address-div{
+    background: #FDFDFD;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.25);
+}
+#address-div > div{
+    display: flex;
+    margin-bottom: 10px;
+}
+.round{
+    background: #D5EBA3;
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+    color: #246D79;
+    text-align: center;
+    line-height: 24px;
+    margin-right: 10px;
+}
+.grayadd,.orangeadd,.blackadd{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #5E5E5E;
+    margin: 0px;
+}
+.orangeadd{
+    color: #FFA11B;
+    padding-left: 20px;
+}
+.blackadd{
+    color: black;
+    font-weight: 600;
+}
+.image{
+    height: 11px;
+    width: 11px;
+}
+#address-div i{
+    line-height: 24px;
+}
+.whitec{
+    background-color: white;
+    border: 1px solid #f1eeee;
+}

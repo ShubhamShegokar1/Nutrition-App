@@ -1,0 +1,202 @@
+body{
+    width: 376px;
+    font-family: Poppins;
+    margin: 0px;
+}
+#top{
+    margin-top: 20px;
+    display: flex;
+    padding: 15px;
+    gap: 15%;
+    border-bottom:1px solid #E6E6E6;
+}
+#top > div{
+    display: flex;
+    width: 42.5%;
+    
+}
+#top  img{
+    width: 24px;
+    height: 24px;
+    margin-top: 10px;
+}
+.grayc,.blackc,.orangec,#toggle{
+    
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: left;
+    color: #5A5A5A;
+    margin: 0px;
+    padding: 2px 10px ;
+}
+.blackc{
+    color: #212121;
+}
+.orangec{
+    color: #FFA11B;
+}
+#search-icon{
+
+    height: 40px;
+    width: 328px;
+    margin: 20px auto;
+    border-radius: 8px;
+    background: #F9F8F8;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+}
+#search-icon i{
+    height: 19px;
+    width: 19px;
+    color: teal;
+    padding: 2px 2px 2px 15px;
+    font-size: 17px;
+}
+#search-icon input{
+    padding-top: 12px;
+    border: none;
+    outline: none; 
+    font-size: 14px;
+    background: #F9F8F8;
+}
+#menu{
+    width: 328px;
+    margin: 0px auto 200px;
+}
+#toggle{
+    font-size: 12px;
+    position: absolute;
+    width: 54px;
+    height: 20px;
+    left: 298px;
+}
+.fa-toggle-on,.fa-toggle-off{
+    color: #4FAE51;
+    font-size: 26px !important;
+    position: absolute;
+    width: 54px;
+    height: 20px;
+    left: 270px;
+}
+#heading{
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    margin-top: 50px;
+
+}
+.calories-count,.price-details,.add-button,.three-button{
+    display: flex;
+}
+#food-menu{
+    font-family: Inter;
+}
+#food-menu > div{
+    border-bottom: 1px solid #E6E6E6;
+    padding: 10px 0px;
+}
+.add-button{
+    gap: 10%;
+}
+.name{
+    margin-top: 5px;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 60%;
+}
+.three-button{
+    height: 40px;
+    width: 86px;
+    border-radius: 16px;
+    background: #FFF9F1;
+    border: 1px solid #FFA11B;
+    box-sizing: border-box;
+    box-shadow: 1px 0px 2px rgba(90, 90, 90, 0.18), 0px 2px 3px rgba(90, 90, 90, 0.18);
+    border-radius: 16px;
+    color: #FFA11B;
+    line-height: 40px;
+    margin-top: -25px;
+}
+.add,.plus,.minus{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 0.02em;
+}
+.add{
+    width: 50%;
+}
+.plus{
+    width: 25%;
+}
+.minus{
+    width: 25%;
+}
+
+.price-details{
+    gap: 5%;
+    margin-bottom: 25px;
+}
+.price{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #10877A;
+    margin: 0px;
+    width: 40%;
+}
+.calory,.type{
+    height: 23px;
+    margin: 0px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    letter-spacing: 0.02em;
+    border-radius: 2px;
+    line-height: 23px;
+    padding: 0px 5px;
+}
+.calory{
+    color: #367C88;
+    background: #D5EBA3;
+
+}
+.type{
+    color: #965800;
+    background: #FFA11B80;
+
+}
+.calories-count{
+    gap: 10%;
+}
+.count,.cal-gray{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    margin: 0px;
+}
+.count{
+    font-size: 12px;
+    color: #212121;
+}
+
+.cal-gray{
+    font-size: 10px;
+    color: #8A8A8A;
+}
