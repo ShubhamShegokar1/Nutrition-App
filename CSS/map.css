@@ -1,0 +1,124 @@
+body{
+    width: 376px;
+    font-family: Poppins;
+    margin: 0px;
+    padding-bottom: 980px;
+}
+#track{
+    position: absolute;
+    width: 376px;
+    height: 80px;
+    left: 0px;
+    top: 2px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+}
+#track > p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    text-align: center;
+    padding-top: 10px;
+}
+#map{
+    position: absolute;
+    height: 403px;
+    left: 0px;
+    top: 84px;
+}
+#details{
+    position: absolute;
+    height: 268px;
+    width: 373px;
+    left: 0px;
+    top: 488px;
+
+    background: #FFFFFF;
+    border: 2px solid #FFA11B;
+    box-sizing: border-box;
+}
+.blackc{
+    position: absolute;
+    width: 97px;
+    height: 32px;
+    left: 139px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 32px;
+    letter-spacing: 0.02em;
+    color: #303030;
+
+}
+.grayc{
+    position: absolute;
+    width: 169px;
+    height: 20px;
+    left: 103px;
+    top: 45px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    color: #8A8A8A;
+}
+#line{
+    position: absolute;
+    width: 202px;
+    height: 0px;
+    left: 87px;
+    top: 90px;
+    border-top: 0.5px solid #C4C4C4;
+    background-color: #C4C4C4;
+}
+#rider{
+    position: absolute;
+    width: 300px;
+    height: 98px;
+    left: 49px;
+    top: 125px;
+
+    background: #FFFFFF;
+    border-radius: 24px;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+}
+#rider img{
+    margin-top: 5px;
+    margin-left: -25px;
+}
+.name{
+    position: absolute;
+    width: 137px;
+    height: 28px;
+    left: 80px;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #000000;
+}
+#rider > div > .grayc{
+    margin: 0px;
+    left: 80px;
+}
+.phone{
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 240px;
+    top: 30px;
+    border-radius: 50%;
+    background: #D5EBA3;
+    text-align: center;
+    line-height: 40px;
+    color:  #10877A;
+}

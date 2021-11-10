@@ -2,10 +2,13 @@ body{
     width: 376px;
     font-family: Poppins;
     margin: 0px;
+    padding-bottom: 170px;
 }
-#items,#caution,#offers,#bill,#address-div,#payment{
+#items,#caution,#offers,#address-div,#bill,#payment{
     padding:10px 20px;
-
+}
+#bill{
+    width: 334px !important;
 }
 #caution{
     display: flex;
@@ -168,7 +171,7 @@ body{
 }
 #bill > div{
     display: flex;
-    gap: 45%;
+    gap: 55%;
 }
 #bill > div > p{
     width: 30%;
@@ -229,4 +232,63 @@ body{
 .whitec{
     background-color: white;
     border: 1px solid #f1eeee;
+}
+
+#payment{
+    display: flex;
+    gap: 16%;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+#add-cart{
+    display: flex;
+    height: 48px;
+    width: 200px;
+    border-radius: 8px;
+    background: #FFA11B;
+    margin-top: 5px;
+}
+.small{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 18px;
+    color: #5E5E5E;
+    display: inline;
+}
+#amount,#proceed-pay{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    padding:5px 10px 0px; 
+}
+#amount + p{
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 10px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    padding:0px 10px; 
+}
+#amount,#amount+p{
+    margin: 0px;
+}
+#proceed-pay{
+    padding-top: 13px;
+    width: 60%;
+    text-align: right;
+}
+#proceed-pay > i{
+    font-size: 12px;
+}
+#payment .blackc{
+    font-weight: 400;
+    font-size: 12px;
+    margin: 0px;
 }

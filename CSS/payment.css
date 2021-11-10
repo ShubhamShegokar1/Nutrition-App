@@ -1,0 +1,196 @@
+body{
+    width: 376px;
+    font-family: Poppins;
+    margin: 0px;
+    padding-bottom: 980px;
+}
+
+#head{
+    position: absolute;
+    width: 376px;
+    height: 80px;
+    left: 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+#head > p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0.02em;
+    color: #000000;
+    text-align: center;
+    padding-top: 10px;
+}
+
+#Address-div{
+    position: absolute;
+    width: 328px;
+    height: 160px;
+    left: 24px;
+    top: 100px;
+    background: #FFF9F0;
+    border-radius: 8px;
+    
+}
+.address-name{
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 20px 0px 2px;
+    padding-left: 20px;
+}
+#Address > p{
+    font-family: Inter;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.02em;
+    margin: 0px;
+    padding-top: 3px;
+    padding-left: 20px;
+}
+#edit{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.02em;
+    color: #FFA11B;
+    margin: 0px;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.box{
+    height: 28px;
+    width: 298px;
+    left: 24px;
+    top: 300px;
+    border-radius: 8px;
+    position: absolute;
+    background: #F6FBFA;
+    padding: 8px 10px 10px 20px;
+    display: flex;
+}
+.box0{
+    flex-direction: column;
+}
+.box0 > div{
+    background: #F6FBFA;
+}
+.box0 > div:first-child{
+    display: flex;
+}
+.box  p{
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    padding: 5px 10px 0px 15px;
+    margin: 0px;
+    width: 75%;
+}
+.box  img{
+    height: 16.5px;
+    width: 21px;
+    border-radius: 0px;
+    padding-top: 8px;
+}
+.fa-caret-down,.fa-caret-up{
+    font-size: 26px !important;
+    text-align: right;
+    padding-top: 3px;
+}
+
+.box3 > img{
+    height: 14px;
+    width: 22px;
+    top: 5px;
+
+}
+.box2 > img{
+    height: 24px;
+    width: 24px;
+    left: 16px;
+    top: 12px;
+    border-radius: 8px;
+
+}
+.box1 > img{
+    height: 18px;
+    width: 19px;
+    left: 3px;
+    top: 3px;
+
+}
+
+#pay{
+    position: absolute;
+    width: 328px;
+    height: 48px;
+    left: 24px;
+    background: #FFA11B;
+    border-radius: 8px;
+
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 48px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+    text-align: center;
+}
+.details > input{
+    border: none;
+    padding: 0px 10px;
+}
+#num{
+    position: absolute;
+    width: 255px;
+    height: 40px;
+    left: 50px;
+    top: 360px;
+
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+#expiry,#cvv{
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    left: 50px;
+    top: 425px;
+
+    background: #FFFFFF;
+    border-radius: 8px;
+}
+#cvv{
+    left: 180px;
+}
+/* .box0{
+    height: 170px;
+} */
+.box1{
+    top: 360px;
+    /* top: 500px; */
+}
+.box2{
+    top: 420px;
+    /* top: 560px; */
+}
+.box3{
+    top: 480px;
+    /* top: 620px; */
+}
+#details{
+    display: none;
+}
+#pay{
+    top: 570px;
+    /* top: 720px; */
+}

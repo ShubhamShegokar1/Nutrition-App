@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment</title>
+    <link rel="stylesheet" href="../CSS/payment.css">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+    <div id="head">
+        <p>Select Address & Pay</p>
+    </div>
+
+
+    <div id="Address-div">
+        <p class="address-name">Deliver to <span id="name">Shweta Tiwary</span></p>
+        <div id="Address">
+            <p>Vasant Kunj, block 4C, house no-12</p>
+            <p>New Delhi-110094</p>
+            <p>9650211234</p>
+        </div>
+        <p id="edit">Edit address</p>
+    </div>
+    <div class="box box0" onclick="displaydiv()">
+        <div>
+            <img src="../Images/card.png" alt="">
+            <p>Debit Card / Credit Card</p>
+            <i class="fa fa-caret-down" id="arrow"></i>
+        </div>
+        
+    </div>
+    <div id="details">
+        <input type="text" placeholder="Card Number *" id="num">
+        <input type="text" placeholder="MM/YY *" id="expiry">
+        <input type="text" placeholder="CVV *" id="cvv">
+    </div>
+    <div class="box box1">
+        <img src="../Images/wallet.png" alt="">
+        <p>Mobile Wallets</p>
+        <i class="fa fa-caret-down"></i>
+    </div>
+    <div class="box box2">
+        <img src="../Images/upi.png" alt="">
+        <p>UPI</p>
+        <i class="fa fa-caret-down"></i>
+    </div>
+    <div class="box box3">
+        <img src="../Images/cashon.png" alt="">
+        <p>Cash on delivery</p>
+        <i class="fa fa-caret-down"></i>
+    </div>
+
+    <div id="pay" onclick="navigate()">
+        Continue
+    </div>
+
+
+    <script src="../JS/payment.js"></script>
+</body>
+</html>
