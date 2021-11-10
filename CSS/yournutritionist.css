@@ -1,0 +1,67 @@
+* {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  margin: 0;
+  padding: 0;
+}
+
+.heading {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #367c88;
+  display: flex;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.heading > :first-child {
+  width: 35%;
+  text-align: left;
+  padding-left: 5%;
+}
+#box1 {
+  margin-left: 5%;
+  margin-top: 12%;
+  width: 340px;
+  height: 200px;
+  background-color: #f0bf41;
+}
+.img1 {
+  width: 70%;
+  margin-left: 15%;
+  margin-top: 6%;
+  border-radius: 100%;
+}
+#box2 {
+  margin-top: 2%;
+  width: 340px;
+  height: 70px;
+
+  background-color: #10877a;
+}
+#doctorname {
+  font-size: 20px;
+  margin-left: 25%;
+  margin-right: 25%;
+  top: 272px;
+  line-height: 28px;
+  color: #ffffff;
+}
+#name10 {
+  border-radius: 8px;
+  left: 0px;
+  top: 28px;
+  width: 90%;
+  height: 50px;
+  margin-left: 3%;
+  margin-top: 15%;
+  background-color: #ffa11b;
+  font-size: 20px;
+  color: #ffffff;
+}
+#sub {
+  margin-top: 30%;
+}
