@@ -1,0 +1,20 @@
+*
+{
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+}
+
+h1
+{
+    color: #FFA11B;
+   text-align: center;
+    margin-top: 40px;
+}
+
+img
+{
+    width: 170px;
+    height: 90px;
+    margin-left:100px;
+    margin-top: 220px;
+}
