@@ -193,3 +193,11 @@ a:active {
     border:none;
     outline: none;
 }
+
+.message
+{
+    font-size: 19px;
+    color: red;
+    margin-bottom: 3%;
+    margin-left: 7%;
+}

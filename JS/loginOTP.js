@@ -3,9 +3,7 @@ function activateOtpButton(){
     var phone = "91"+document.querySelector(".phone-input").value;
     if(phone.length==12){
         document.querySelector(".solid-orange-btn").classList.add("solid-orange-btn-activated");
-      
-        var name1=document.querySelector(".input-name").value
-        let User = {phoneNumber:phone,name:name1};
+        let User = {phoneNumber:phone};
         localStorage.setItem("UserData",JSON.stringify(User));
         fetch("http://localhost:8080/login",{
                 method:'POST',
@@ -15,7 +13,7 @@ function activateOtpButton(){
                 }
             })
             .then(function(response){
-            window.location="../HTML/login-signup-otp.html";  
+            window.location="../HTML/login-signup-otp-copy.html";  
                return response.json()
             })
             .then(function(data){
@@ -30,7 +28,6 @@ function activateOtpButton(){
 
  function activateOtpVerification(){
    
-    //document.querySelector(".verfication-desc").innerHTML="We texted you a verification code to your mobile number"
     if(document.querySelector("#otp1").value.length>0 && 
       document.querySelector("#otp2").value.length>0
       &&document.querySelector("#otp3").value.length>0 && 
@@ -55,7 +52,7 @@ function activateOtpButton(){
     })
     .then(function(response){
         if(response.status==200){
-           window.location="../HTML/AccountCreated.html";  
+           window.location="../HTML/LoginSuccess.html";  
         }
         else if(response.status==400 || response.status==404){
            document.querySelector(".message").innerHTML="Something went wrong, Please try again"
