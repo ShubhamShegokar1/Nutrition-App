@@ -50,11 +50,7 @@
         <img src="../img/salad bowls.png" alt="" />
         <p>Salad Bowls</p>
       </div>
-<<<<<<< HEAD
       <div>
-=======
-      <div onclick="navigate(event)">
->>>>>>> e15f8f5290039d1e6510bb78610ac56621708843
         <img src="../img/rice_bowl.png" alt="" />
         <p>Rice Bowls</p>
       </div>
@@ -70,11 +66,7 @@
         <img src="../img/juices.png" alt="" />
         <p>Juices</p>
       </div>
-<<<<<<< HEAD
       <div>
-=======
-      <div onclick="navigate(event)">
->>>>>>> e15f8f5290039d1e6510bb78610ac56621708843
         <img src="../img/dessert.png" alt="" />
         <p>Dessert</p>
       </div>
@@ -107,10 +99,10 @@
     </nav>
 
     <script>
-      function navigate(event){
-       let type = event.target.parentNode.querySelector("p").innerText;
-       localStorage.setItem("type",type);
-       location.assign("../HTML/food.html");
+      function navigate(event) {
+        let type = event.target.parentNode.querySelector("p").innerText;
+        localStorage.setItem("type", type);
+        location.assign("../HTML/food.html");
       }
     </script>
   </body>
