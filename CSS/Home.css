@@ -56,13 +56,13 @@
 }
 
 #div3 {
-    margin: 17px 32px;
-    margin-top: 12px;
+    margin: 17px 25px;
+    margin-top: 20px;
     background: #b1dfd9;
     display: flex;
     border-radius: 8px;
     justify-content: space-evenly;
-    height: 98px;
+    height: 120px;
 }
 
 #div3_1 {
@@ -102,15 +102,17 @@
 #div4 {
     margin: 17px 32px;
     padding-bottom: 100px;
+    padding-top: 10px;
+
     height: auto;
     display: grid;
     grid-template-columns: repeat(2, 48%);
     grid-template-rows: auto;
-    gap: 4%;
+    gap: 5%;
 }
 
 #div4>div {
-    height: 110px;
+    height: 130px;
     cursor: pointer;
     text-align: center;
 }
