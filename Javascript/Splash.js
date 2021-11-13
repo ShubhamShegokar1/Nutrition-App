@@ -1,5 +1,5 @@
 function skip(){
- window.location="../HTML/Home.html";
+ window.location="../HTML/login-home.html";
 }
 
 function nextSplash2()

@@ -99,30 +99,12 @@
       </div>
     </div>
 
-    <!-- bottom navbar fixed  -->
-    <nav class="bottom-nav">
-      <div class="bottom-nav__item">
-        <a href="./Home.html">
-          <div class="bottom-nav__item-content">
-            <img src="../img/home2.png" alt="" />
-            <p>Home</p>
-          </div>
-        </a>
-      </div>
-      <div class="bottom-nav__item">
-        <div class="bottom-nav__item-content">
-          <img src="../img/message2.png" alt="" />
-          <p class="act">Your Nutrionist</p>
-        </div>
-      </div>
-      <div class="bottom-nav__item">
-        <a href="">
-          <div class="bottom-nav__item-content">
-            <img src="../img/account.png" alt="" />
-            <p>Account</p>
-          </div>
-        </a>
-      </div>
-    </nav>
+    
   </body>
 </html>
+<script type="module">
+  import navbar  from "../component/bottomNavbar.js"
+let div = document.createElement("div")
+div.innerHTML=navbar();
+document.body.append(div);
+</script> 
