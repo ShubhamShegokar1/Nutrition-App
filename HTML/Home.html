@@ -41,47 +41,27 @@
 
     <!-- divs -->
     <div id="div4">
-      <div>
+      <div onclick="navigate(event)">
         <img src="../img/salad bowls.png" alt="" />
         <p>Salad Bowls</p>
       </div>
-      <div>
-<<<<<<< HEAD
+      <div onclick="navigate(event)">
         <img src="../img/rice_bowl.png" alt="" />
         <p>Rice Bowls</p>
       </div>
-      <div>
+      <div onclick="navigate(event)">
         <img src="../img/sandwich.png" alt="" />
         <p>Sandwiches</p>
       </div>
-      <div>
+      <div onclick="navigate(event)">
         <img src="../img/pasta.png" alt="" />
         <p>Pasta</p>
       </div>
-      <div>
+      <div onclick="navigate(event)">
         <img src="../img/juices.png" alt="" />
         <p>Juices</p>
       </div>
-      <div>
-=======
-        <img src="../img/Rice Bowls.png" alt="" />
-        <p>Rice Bowls</p>
-      </div>
-      <div>
-        <img src="../img/sandviches.png" alt="" />
-        <p>Sandwiches</p>
-      </div>
-      <div>
-        <img src="../img/pasta.png" alt="" />
-        <p>Pasta</p>
-      </div>
-    
-      <div>
-        <img src="../img/juices.png" alt="" />
-        <p>Juices</p>
-      </div>
-      <div>
->>>>>>> 776c13dfb4243e2345e8b7779602af7849bcaf5b
+      <div onclick="navigate(event)">
         <img src="../img/dessert.png" alt="" />
         <p>Dessert</p>
       </div>
@@ -112,5 +92,13 @@
         </a>
       </div>
     </nav>
+
+    <script>
+      function navigate(event){
+       let type = event.target.parentNode.querySelector("p").innerText;
+       localStorage.setItem("type",type);
+       location.assign("../HTML/food.html");
+      }
+    </script>
   </body>
 </html>

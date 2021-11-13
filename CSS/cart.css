@@ -2,7 +2,7 @@ body{
     width: 376px;
     font-family: Poppins;
     margin: 0px;
-    padding-bottom: 170px;
+    padding-bottom: 20px;
 }
 #items,#caution,#offers,#address-div,#bill,#payment{
     padding:10px 20px;
