@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
+    </style>
+    
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class="page-header">
+            <div class="header-content">
+                <a href="login-home.html"><img src="../images/left-arrow.png" alt="Back"></a>
+                <span class="f-poppins f-weight-500">Welcome to Healthy Chef</span>
+            </div>
+        </div>
+        <div class="img-div">
+            <img src="../images/login-img.png" alt="" class="login-top">
+        </div>
+        <div class="login-outer-div ">
+            <div class="login-inner-div">
+                <span class="f-poppins f-weight-600">Name</span>
+                
+                <form class="login-form input-outer-div h-48">
+                    <input type="text" class="f-poppins-600 input-box input-name">
+                </form>
+            </div>
+            <div class="login-inner-div">
+                <span class="f-poppins f-weight-600">Enter Your Mobile Number</span>
+                
+                <form class="login-form input-outer-div h-48">
+                    <p class="f-poppins f-weight-600 country-code">+91</p>
+                    <input type="number" onKeyDown="if(this.value.length==10 && event.keyCode!=8) return false;" class="f-poppins-600 input-box phone-input">
+                </form>
+            </div>
+            <div class="login-otp-btn">
+                <div class="solid-orange-btn w-100 h-48">
+                    <div class="v-align-center">
+                        <span class="f-poppins f-weight-bold line-height-20">Get OTP</span>
+                    </div>
+                </div>
+            </div>
+            <div class="terms-text">
+                <p class="f-poppins f-weight-400 line-height-16">By proceeding, you agree to our <span class="color-terms-red">Terms of Services</span>  and <span class="color-terms-red">Privacy Policy</span></p>
+            </div>
+            <div class="social-login">
+                <div class="social-login-btn w-100 h-56">
+                    <div class="v-align-center">
+                        <span class="f-poppins f-weight-600 line-height-28 fs-18">Continue with</span>
+                        <img src="../images/google.png" alt="google">
+                        <img src="../images/facebook-app-symbol.png" alt="fb">
+                        <img src="../images/email-icon.png" alt="email">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="../JS/login.js"></script>
+</html>

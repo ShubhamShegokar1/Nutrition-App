@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enter OTP</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@400;600;700&display=swap');
+    </style>
+    
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+    <div class="main-div">
+        <div class="page-header">
+            <div class="header-content enter-otp-heading">
+                <a href="login-home.html "><img src="../images/left-arrow.png" alt="Back"></a>
+                <span class="f-poppins f-weight-600 fs-20 ">Enter OTP</span>
+            </div>
+        </div>
+        <!-- <div class="img-div">
+            
+        </div> -->
+        <div class="login-outer-div ">
+            <span class="f-inter fs-24 f-weight-600" style="padding-top: 100px;">Enter Verification Code</span>
+            <span class="f-inter fs-12 f-weight-400 verfication-desc">We texted you a verification code to your mobile number</span>
+            <div class="login-inner-div">                
+                <form class="input-outer-div h-48 otp-form">
+                    <input type="number" onKeyDown="if(this.value.length==1 && event.keyCode!=8) return false;"  class="otp otpback f-poppins f-weight-bold fs-20 line-height-28" name="otp1" id="otp1" placeholder="0" autofocus> 
+                    <input type="number" onKeyDown="if(this.value.length==1 && event.keyCode!=8) return false;" class="otp otpback f-poppins f-weight-bold fs-20 line-height-28" name="otp2" id="otp2" placeholder="0">
+                    <input type="number" onKeyDown="if(this.value.length==1 && event.keyCode!=8) return false;"  class="otp otpback f-poppins f-weight-bold fs-20 line-height-28" name="otp3" id="otp3" placeholder="0">
+                    <input type="number" onKeyDown="if(this.value.length==1 && event.keyCode!=8) return false;" class="otpback f-poppins f-weight-bold fs-20 line-height-28" name="otp4" id="otp4" placeholder="0">
+                </form>
+            </div>
+            <div class="login-otp-btn">
+                <div class="message"></div>
+                <div class="solid-orange-btn w-100 h-48">
+                    <div class="v-align-center">
+                        <span class="f-poppins f-weight-bold line-height-20">Verify OTP</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+<script src="../JS/login.js"></script>
+</html>

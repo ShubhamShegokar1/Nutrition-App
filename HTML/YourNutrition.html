@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nutrionists</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/YourNutrition.css" />
   </head>
   <body>
@@ -26,7 +28,39 @@
         <div>
           <div>
             <p>10 years experience</p>
-            <p>120 Consultation</p>
+            <p>72 Consultation</p>
+          </div>
+          <div>
+            <button class="c_btn">Connect</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <img src="../img/Richa Mehra.png" alt="" />
+          <p>Richa Mehra</p>
+        </div>
+        <div>
+          <div>
+            <p>15 years experience</p>
+            <p>122 Consultation</p>
+          </div>
+          <div>
+            <button class="c_btn">Connect</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div>
+          <img src="../img/Rajiv Kumar.png" alt="" />
+          <p>Rajiv Kumar</p>
+        </div>
+        <div>
+          <div>
+            <p>5 years experience</p>
+            <p>13 Consultation</p>
           </div>
           <div>
             <button class="c_btn">Connect</button>
@@ -37,12 +71,12 @@
       <div>
         <div>
           <img src="../img/image32.png" alt="" />
-          <p>Sara Agarwal</p>
+          <p>Navin Chadda</p>
         </div>
         <div>
           <div>
-            <p>10 years experience</p>
-            <p>120 Consultation</p>
+            <p>12 years experience</p>
+            <p>80 Consultation</p>
           </div>
           <div>
             <button class="c_btn">Connect</button>
@@ -52,40 +86,8 @@
 
       <div>
         <div>
-          <img src="../img/image32.png" alt="" />
-          <p>Sara Agarwal</p>
-        </div>
-        <div>
-          <div>
-            <p>10 years experience</p>
-            <p>120 Consultation</p>
-          </div>
-          <div>
-            <button class="c_btn">Connect</button>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <img src="../img/image32.png" alt="" />
-          <p>Sara Agarwal</p>
-        </div>
-        <div>
-          <div>
-            <p>10 years experience</p>
-            <p>120 Consultation</p>
-          </div>
-          <div>
-            <button class="c_btn">Connect</button>
-          </div>
-        </div>
-      </div>
-
-      <div>
-        <div>
-          <img src="../img/image32.png" alt="" />
-          <p>Sara Agarwal</p>
+          <img src="../img/Rajiv Kumar.png" alt="" />
+          <p>Mahesh Agarwal</p>
         </div>
         <div>
           <div>
@@ -99,30 +101,12 @@
       </div>
     </div>
 
-    <!-- bottom navbar fixed  -->
-    <nav class="bottom-nav">
-      <div class="bottom-nav__item">
-        <a href="./Home.html">
-          <div class="bottom-nav__item-content">
-            <img src="../img/home2.png" alt="" />
-            <p>Home</p>
-          </div>
-        </a>
-      </div>
-      <div class="bottom-nav__item">
-        <div class="bottom-nav__item-content">
-          <img src="../img/message2.png" alt="" />
-          <p class="act">Your Nutrionist</p>
-        </div>
-      </div>
-      <div class="bottom-nav__item">
-        <a href="">
-          <div class="bottom-nav__item-content">
-            <img src="../img/account.png" alt="" />
-            <p>Account</p>
-          </div>
-        </a>
-      </div>
-    </nav>
+    
   </body>
 </html>
+<script type="module">
+  import navbar  from "../component/bottomNavbar.js"
+let div = document.createElement("div")
+div.innerHTML=navbar();
+document.body.append(div);
+</script> 

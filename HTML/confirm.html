@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order placed</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/confirm.css">
+</head>
+<body>
+    <div class="slide">
+
+        
+    </div>
+
+    <div id="status">
+        <div class="size1 r1"></div>
+        <div class="size1 r2"></div>
+        <div class="size1 r3"></div>
+        
+        <div class="size2 r4"></div>
+        <div class="size2 r5"></div>
+        
+        <div class="size3 r6"></div>
+        <div class="size3 r7"></div>
+        <div class="round">
+            <img src="../Images/tick.png" alt="">
+            <p>Your order has been successfully placed</p>
+        </div>
+    </div>
+    <script>
+        let div = document.getElementById("status");
+        let body = document.querySelector("body");
+        function navigate(){
+            setTimeout(() => {
+                body.style.background = "#FFA11B";
+               div.style.display = "block"; 
+            }, 2500);
+            setTimeout(()=>{
+                location.assign("../HTML/map.html");
+            },6000);
+       }
+    navigate();
+    </script>
+</body>
+</html>

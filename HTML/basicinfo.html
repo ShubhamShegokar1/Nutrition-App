@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Info page</title>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="../CSS/basicinfo.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    
+    <body>
+        <div class="rt1">
+            <div>
+                <span id="rt2" class="material-icons">west</span>
+                 <span id="rt3">Basic Info</span>
+                
+            </div>
+
+        </div>
+        <div class="rt4">
+            <form id="form" method="post">
+                <div>
+                <label for="name" class="name">Name</label><br>
+                <div id="rt7">
+                <input type="text" class="name1" id="fname" name="name" onkeyup="changeTheColorOfButtonDemo()"><br>
+               </div>
+               </div>
+               <div id="m11">
+                    <label for="gender"class="name">Gender</label><br><br>
+                    <select id="gender" class="name1" onkeyup="changeTheColorOfButtonDemo()">
+                    
+                    <option value="Male" id="font">Male</option>
+                    <option value="Female" id="font">Female</option>
+                    <option value="Others" id="font">Others</option>
+                    </select>
+                   
+                <br>
+              </div>
+              <br>
+              <div>
+                <label for="browser"class="name">Date of Birth</label><br>
+                <br>
+                <input type="date"id="dob" class="name1" onkeyup="changeTheColorOfButtonDemo()"><br>
+              </div>
+              </div>
+              <br>
+              <div>
+                <label for="name" class="name">Weight</label><br>
+                <div id="rt7">
+                <input type="text" class="name1"id="Weight" name="name"  onkeyup="changeTheColorOfButtonDemo()"><br><br>
+               </div>
+               <div>
+                <label for="name" class="name">Height</label><br>
+                <div id="rt7">
+                <input type="text" class="name1" id="Height" name="name" onkeyup="changeTheColorOfButtonDemo()"><br>
+               </div>
+               <div id="m11">
+                <label for="Food"class="name">Food Preference</label><br><br>
+                <select name="Food_Preference" id="food" class="name1" onkeyup="changeTheColorOfButtonDemo()">
+                
+                <option value="Vegetarian" id="font">Vegetarian</option>
+                <option value="Eggetarian" id="font">Eggetarian</option>
+                <option value="Non-Vegetarian" id="font">Non-Vegetarian</option>
+                </Select>
+               
+            <br>
+          </div>
+          <input class="name10 solid-orange-btn" id="buttonDemo" type="submit" value="submit"/>
+         
+              </form>
+        </div>
+    </body>
+    <script>
+        function changeTheColorOfButtonDemo() {
+        if(document.getElementById('fname').value!=="" )
+        {
+            if(document.getElementById('gender').value!=="")
+            {
+                if(document.getElementById('dob').value!=="")
+                {
+                    if(document.getElementById('Weight').value!=="")
+                    {
+                        if(document.getElementById('Height').value!=="")
+                        {
+                            if(document.getElementById('food').value!=="")
+                            {
+                                document.querySelector(".solid-orange-btn").classList.add("solid-orange-btn-activated");
+                            }  
+                        }  
+                    }
+                }  
+            } 
+        }
+        else
+        {
+            document.querySelector(".solid-orange-btn").classList.remove("solid-orange-btn-activated");
+        }
+    }
+        var form=document.getElementById('form');
+  
+        form.addEventListener('submit',function(e){
+  
+          e.preventDefault()
+  
+          var fname=document.getElementById('fname').value
+          var gender=document.getElementById('gender').value
+          var dob=document.getElementById('dob').value
+          var weight=document.getElementById('Weight').value
+          var height=document.getElementById('Height').value
+          var food=document.getElementById('food').value
+  
+          fetch("http://localhost:8080/forms",{
+  
+              method:'POST',
+              body:JSON.stringify({
+                  name:fname,
+                  gender:gender,
+                  food:food,
+                  weight:weight,
+                  height:height,
+                  dob:dob,
+  
+              }),
+  
+              headers:{
+                  "Content-Type":"application/json; charset=UTF-8"
+              }
+          })
+  
+          .then(function(response){
+              return response.json()
+          })
+          .then(function(data){
+              console.log(data)
+          })
+        })
+      </script>
+</html>

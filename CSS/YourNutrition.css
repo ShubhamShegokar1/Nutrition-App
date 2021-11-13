@@ -5,6 +5,8 @@
     box-sizing: border-box;
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
 }
 
 #headTitle {
