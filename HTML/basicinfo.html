@@ -26,12 +26,12 @@
                 <div>
                 <label for="name" class="name">Name</label><br>
                 <div id="rt7">
-                <input type="text" class="name1" id="fname" name="name"><br>
+                <input type="text" class="name1" id="fname" name="name" onkeyup="changeTheColorOfButtonDemo()"><br>
                </div>
                </div>
                <div id="m11">
                     <label for="gender"class="name">Gender</label><br><br>
-                    <select id="gender" class="name1">
+                    <select id="gender" class="name1" onkeyup="changeTheColorOfButtonDemo()">
                     
                     <option value="Male" id="font">Male</option>
                     <option value="Female" id="font">Female</option>
@@ -44,23 +44,23 @@
               <div>
                 <label for="browser"class="name">Date of Birth</label><br>
                 <br>
-                <input type="date"id="dob" class="name1"><br>
+                <input type="date"id="dob" class="name1" onkeyup="changeTheColorOfButtonDemo()"><br>
               </div>
               </div>
               <br>
               <div>
                 <label for="name" class="name">Weight</label><br>
                 <div id="rt7">
-                <input type="text" class="name1"id="Weight" name="name"><br><br>
+                <input type="text" class="name1"id="Weight" name="name"  onkeyup="changeTheColorOfButtonDemo()"><br><br>
                </div>
                <div>
                 <label for="name" class="name">Height</label><br>
                 <div id="rt7">
-                <input type="text" class="name1" id="Height" name="name"><br>
+                <input type="text" class="name1" id="Height" name="name" onkeyup="changeTheColorOfButtonDemo()"><br>
                </div>
                <div id="m11">
                 <label for="Food"class="name">Food Preference</label><br><br>
-                <select name="Food_Preference" id="food" class="name1">
+                <select name="Food_Preference" id="food" class="name1" onkeyup="changeTheColorOfButtonDemo()">
                 
                 <option value="Vegetarian" id="font">Vegetarian</option>
                 <option value="Eggetarian" id="font">Eggetarian</option>
@@ -69,12 +69,37 @@
                
             <br>
           </div>
-          <input class="name10"  type="submit" value="submit"/>
+          <input class="name10 solid-orange-btn" id="buttonDemo" type="submit" value="submit"/>
          
               </form>
         </div>
     </body>
     <script>
+        function changeTheColorOfButtonDemo() {
+        if(document.getElementById('fname').value!=="" )
+        {
+            if(document.getElementById('gender').value!=="")
+            {
+                if(document.getElementById('dob').value!=="")
+                {
+                    if(document.getElementById('Weight').value!=="")
+                    {
+                        if(document.getElementById('Height').value!=="")
+                        {
+                            if(document.getElementById('food').value!=="")
+                            {
+                                document.querySelector(".solid-orange-btn").classList.add("solid-orange-btn-activated");
+                            }  
+                        }  
+                    }
+                }  
+            } 
+        }
+        else
+        {
+            document.querySelector(".solid-orange-btn").classList.remove("solid-orange-btn-activated");
+        }
+    }
         var form=document.getElementById('form');
   
         form.addEventListener('submit',function(e){
