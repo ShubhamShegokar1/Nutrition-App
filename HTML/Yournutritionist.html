@@ -4,17 +4,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Plan</title>
-    <link rel="stylesheet" href="/CSS/yournutritionist.css" />
+    <link rel="stylesheet" href="../CSS/yournutritionist.css" />
   </head>
   <body>
     <div class="heading">
-      <div><img src="/Images/Backward.svg" /></div>
+      <div><img src="../Images/Backward.svg" /></div>
       <div>Your Nutritionist</div>
     </div>
     <hr />
     <div id="box1">
       <div>
-        <img class="img1" src="/Images/Doctor1.png" />
+        <img class="img1" src="../Images/Doctor1.png" />
       </div>
       <div id="box2">
         <br />
@@ -23,7 +23,12 @@
     </div>
 
     <div id="sub">
-      <button id="name10">Submit</button>
+      <button class="name10" id="buttonDemo">Submit</button>
     </div>
   </body>
+  <script>
+     document.getElementById("buttonDemo").onclick = function () {
+        location.href = "../HTML/DietPlan.html";
+          }
+  </script>
 </html>

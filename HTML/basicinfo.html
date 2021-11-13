@@ -22,7 +22,7 @@
 
         </div>
         <div class="rt4">
-            <form id="form" method="post">
+            <form id="form" method="post" >
                 <div>
                 <label for="name" class="name">Name</label><br>
                 <div id="rt7">
@@ -67,7 +67,7 @@
                 <option value="Non-Vegetarian" id="font">Non-Vegetarian</option>
                 </Select>
                
-            <br>
+            
           </div>
           <input class="name10 solid-orange-btn" id="buttonDemo" type="submit" value="submit"/>
          
@@ -137,6 +137,9 @@
           .then(function(data){
               console.log(data)
           })
+          document.getElementById("buttonDemo").onclick = function () {
+        location.href = "Yournutritionist.html";
+          }
         })
       </script>
 </html>
