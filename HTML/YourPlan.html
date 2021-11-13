@@ -1,57 +1,93 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Your Plan</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../CSS/YourPlan.css">
-    <link rel="stylesheet" href="../CSS/Home.css">
-
-</head>
-<body>
-    <div class="heading">
-        <div><img src="../Images/Backward.svg" ></div>
-        <div>Your Plan</div>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../CSS/YourPlan.css" />
+    <link rel="stylesheet" href="../CSS/Home.css" />
+  </head>
+  <body>
+    <!-- <div class="heading">
+      <div>
+        <a href="./BuyPlan.html"><img src="../Images/Backward.svg" /></a>
+      </div>
+      <div>Your Plan</div>
+    </div> -->
+    <!-- Top navbar  -->
+    <div id="headTitle">
+      <div>
+        <a href="./BuyPlan.html"
+          ><img src="../img/eva_arrow-back-fill.png" alt=""
+        /></a>
+        <p>Your Plan</p>
+      </div>
     </div>
-    <hr>
+    <!-- <hr /> -->
     <div class="plan">
-          <div class="left">
-              <img class="leftImg" src="../Images/DeitPlan.png" >
-          </div> 
-          <div class="Right">
-              <div>2 Weeks Plan</div>
-              <div>three times meal</div>
-              <div>Start Date-6 Dec, 2021</div>
-              <div>Start Date-20 Dec, 2021</div>
-          </div>
-    </div>
-    
-    <div class="time">
-        <div>Time for Breakfast</div>
-        <div><p>08:30 AM</p></div>
-    </div>
-    <div class="time">
-        <div>Time for Lunch</div>
-        <div><p>01:30 PM</p></div>
-    </div>
-    <div class="time">
-        <div>Time for Dinner</div>
-        <div><p>08:30 PM</p></div>
+      <div class="left">
+        <img class="leftImg" src="../Images/DeitPlan.png" />
+      </div>
+      <div class="Right">
+        <div>2 Weeks Plan</div>
+        <div>three times meal</div>
+        <div>Start Date-6 Dec, 2021</div>
+        <div>Start Date-20 Dec, 2021</div>
+      </div>
     </div>
 
-    
-   
-</body>
+    <div class="time">
+      <div>Time for Breakfast</div>
+      <div><p>08:30 AM</p></div>
+    </div>
+    <div class="time">
+      <div><p>Time for Lunch</p></div>
+      <div><p>01:30 PM</p></div>
+    </div>
+    <div class="time">
+      <div>Time for Dinner</div>
+      <div><p>08:30 PM</p></div>
+    </div>
+
+    <!-- bottom navbar fixed  -->
+    <nav class="bottom-nav">
+      <div class="bottom-nav__item">
+        <a href="./Home.html">
+          <div class="bottom-nav__item-content">
+            <img src="../img/home2.png" alt="" />
+            <p>Home</p>
+          </div>
+        </a>
+      </div>
+      <div class="bottom-nav__item">
+        <div class="bottom-nav__item-content">
+          <img src="../img/message2.png" alt="" />
+          <p class="act">Your Nutrionist</p>
+        </div>
+      </div>
+      <div class="bottom-nav__item">
+        <a href="./Account.html">
+          <div class="bottom-nav__item-content">
+            <img src="../img/account.png" alt="" />
+            <p>Account</p>
+          </div>
+        </a>
+      </div>
+    </nav>
+  </body>
 </html>
 
-<script type="module">
-    // import navbar from "../component/bottomNavbar.js"
-    // document.body.innerHTML=bottomNavbar();
-
-    import navbar  from "../component/bottomNavbar.js"
-  let div = document.createElement("div")
-  div.innerHTML=navbar();
+<!-- <script type="module">
+  import navbar from "../component/bottomNavbar.js";
+  let div = document.createElement("div");
+  div.innerHTML = navbar();
   document.body.append(div);
- </script> 
+</script> -->
