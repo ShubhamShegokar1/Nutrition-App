@@ -28,22 +28,7 @@
         <span class="bold-black">Your Cart</span>
         <i class="fa fa-shopping-bag"></i>
 
-        <div id="cart-items">
-            <div>
-                <div class="square">
-                    <div class="circle"></div>
-                </div>
-                <div class="dish">
-                    <p class="grayc">Mediterranean Chickpea Salad</p>
-                    <p class="grayc">₹ 270</p>
-                </div>
-                <div class="three-button">
-                    <div class="minus"> - </div>
-                    <div class="add">1</div>
-                    <div class="minus">+</div>
-                </div>
-            </div>
-        </div>
+        <div id="cart-items"></div>
         
         <div class="instruct">
             <i class="fa fa-file-text-o"></i>
@@ -61,7 +46,7 @@
         <div>
             <p class="grayc under ">Item Total</p>
             <div class="right">
-                <p class="grayc">₹ 270</p>
+                <p class="grayc" id="money">₹ 270</p>
             </div>
             
         </div>
@@ -75,7 +60,7 @@
         <div>
             <p class="blackc ">To Pay</p>
             <div class="right">
-                <p class="blackc ">₹ 310</p>
+                <p class="blackc " id="taxes">₹ 310</p>
             </div>
         </div>
     </div>
@@ -101,7 +86,7 @@
             </div>
             <p class="blackc">Google Pay</p>
         </div>
-        <div id="add-cart">
+        <div id="add-cart" onclick="navigate()">
             <div>
                 <p id="amount">₹ 310</p>
                 <p>Total</p>
@@ -112,5 +97,8 @@
             </div>
         </div>
     </div>
+
+
+    <script src="../JS/cart.js"></script>
 </body>
 </html>

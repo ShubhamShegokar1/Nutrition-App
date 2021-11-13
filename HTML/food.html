@@ -40,44 +40,21 @@
     <div id="menu">
         <p id="heading">Salads</p>
 
-        <div id="food-menu">
+        <div id="food-menu"></div>
+    </div>
+
+    <div id="sticky">
+        <div id="add-cart" onclick="navigate()">
             <div>
-                <img src="../images/food.png" alt="" class="food-image">
-                <div class="add-button">
-                    <p class="name">Mediterranean Chickpea
-                        salad</p>
-                    <div class="three-button">
-                        <div class="minus"> - </div>
-                        <div class="add">ADD</div>
-                        <div class="minus">+</div>
-                    </div>
-                </div>
-                
-                <div class="price-details">
-                    <p class="price">₹ 270</p>
-                    <p class="calory"> 368 Kcal</p>
-                    <p class="type">High Protein</p>
-                </div>
-                <div class="calories-count">
-                    <div>
-                        <p class="count">19 g</p>
-                        <p class="cal-gray">Protein</p>
-                    </div>
-                    <div>
-                        <p class="count">99 g</p>
-                        <p class="cal-gray">Carbs</p>
-                    </div>
-                    <div>
-                        <p class="count">18 g</p>
-                        <p class="cal-gray">Fats</p>
-                    </div>
-                    <div>
-                        <p class="count">9 g</p>
-                        <p class="cal-gray">Fibre</p>
-                    </div>
-                </div>
+                <p class="white-cart"><span id="count">0</span> ITEMS</p>
+                <p class="white-cart"><span id="amount">₹ 0 </span>plus taxes</p>
+            </div>
+            <div id="proceed-pay">
+                <span >View Cart</span>
+                <i class="fa fa-play"></i>
             </div>
         </div>
     </div>
+    <script src="../JS/food.js"></script>
 </body>
 </html>
