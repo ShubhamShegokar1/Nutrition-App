@@ -20,8 +20,8 @@ function displaydiv(){
         arrow.setAttribute("class","fa fa-caret-down");
         moveboxesup();
         flag = 0;
-    }
-    
+    } 
+
 }
 
 function moveboxesdown(){
