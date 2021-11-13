@@ -82,10 +82,18 @@ body {
   height: 100px;
   margin-left: 5%;
   margin-top: 15%;
-  background-color: #ffd8a1;
   font-size: 38px;
   color: #ffffff;
 }
 #font {
   font-size: 15px;
+  width: 50%;
+}
+.solid-orange-btn {
+  cursor: pointer;
+  background-color: #ffd8a1;
+}
+
+.solid-orange-btn-activated {
+  background-color: #ffa11b;
 }

@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Account</title>
     <link rel="stylesheet" href="../CSS/account.css">
+    <link rel="stylesheet" href="../CSS/Home.css">
+    <script src="../Javascript/Splash.js"></script>
+
 
 </head>
 <body>
@@ -17,7 +20,7 @@
         <div>EDIT</div>
     </div>
     <div>+91 - 9666666666</div>
-    <div class="email">shwetatiwary87@yahoo.com</div>
+   <!--- <div class="email">shwetatiwary87@yahoo.com</div> ----> 
    </div>
    </div>
     
@@ -25,7 +28,7 @@
     <div class="list_Content"> <div><img src="../Images/Orders.svg" ></div> <div>Your Orders</div></div>
     <div class="list_Content"> <div><img src="../Images/Plan.svg" ></div> <div>Your Plan</div></div>
     <div class="list_Content"> <div><img src="../Images/Address.svg" ></div> <div>Manage address</div></div>
-    <div class="list_Content"> <div><img src="../Images/email.svg" ></div> <div>Manage Emails</div></div>
+    <div onclick="notification()" class="list_Content"> <div ><img src="../Images/email.svg" ></div>  <div>Notifications</div></div>
     <div class="list_Content"> <div><img src="../Images/Payments.svg" ></div> <div>Payments</div></div>
     <div class="list_Content"> <div><img src="../Images/Support.svg" ></div> <div>Help and support</div></div>
     <div class="list_Content"> <div><img src="../Images/Settings.svg" ></div> <div>Settings</div></div>
@@ -34,3 +37,9 @@
     </div>
 </body>
 </html>
+<script type="module">
+    import navbar  from "../component/bottomNavbar.js"
+  let div = document.createElement("div")
+  div.innerHTML=navbar();
+  document.body.append(div);
+ </script> 

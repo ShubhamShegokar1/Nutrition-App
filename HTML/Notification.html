@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notifications</title>
     <link rel="stylesheet" href="../CSS/notification.css">
+    <link rel="stylesheet" href="../CSS/Home.css">
+
 
 </head>
 <body>
@@ -46,3 +48,10 @@
 
 </body>
 </html>
+
+<script type="module">
+    import navbar  from "../component/bottomNavbar.js"
+  let div = document.createElement("div")
+  div.innerHTML=navbar();
+  document.body.append(div);
+ </script> 

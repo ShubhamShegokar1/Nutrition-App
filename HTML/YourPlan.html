@@ -4,7 +4,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Plan</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/YourPlan.css">
+    <link rel="stylesheet" href="../CSS/Home.css">
+
 </head>
 <body>
     <div class="heading">
@@ -29,14 +33,25 @@
         <div><p>08:30 AM</p></div>
     </div>
     <div class="time">
-        <div>Time for Breakfast</div>
-        <div><p>08:30 AM</p></div>
+        <div>Time for Lunch</div>
+        <div><p>01:30 PM</p></div>
     </div>
     <div class="time">
-        <div>Time for Breakfast</div>
-        <div><p>08:30 AM</p></div>
+        <div>Time for Dinner</div>
+        <div><p>08:30 PM</p></div>
     </div>
+
+    
    
 </body>
 </html>
 
+<script type="module">
+    // import navbar from "../component/bottomNavbar.js"
+    // document.body.innerHTML=bottomNavbar();
+
+    import navbar  from "../component/bottomNavbar.js"
+  let div = document.createElement("div")
+  div.innerHTML=navbar();
+  document.body.append(div);
+ </script> 
