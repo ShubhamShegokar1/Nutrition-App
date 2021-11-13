@@ -42,13 +42,14 @@ function activateOtpButton(){
        let c=document.querySelector("#otp3").value  
        let d= document.querySelector("#otp4").value
        let str=a+b+c+d; 
-       let OTPCheck={otp : str }  
-       let User = JSON.parse(localStorage.getItem("UserData"));
-       console.log(User)
+       let temp={otp : str }  
+       let OTPCheck=JSON.stringify(temp)
+      // let User = JSON.parse(localStorage.getItem("UserData"));
+       //console.log(User)
      
-    fetch("http://localhost:8080/loginOtpCheck",{
+    fetch("http://localhost:8080/otpCheck",{
         method:'POST',
-        body:JSON.stringify(OTPCheck),
+        body:(OTPCheck),
         headers:{
             "Content-Type":"application/json; charset=UTF-8"
         }
