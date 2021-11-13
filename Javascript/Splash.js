@@ -16,3 +16,8 @@ function autoMove(){
         window.location="../HTML/Splash.html";
     }, 2000);
 }
+
+function notification()
+{
+    window.location="../HTML/Notification.html";
+}

@@ -6,15 +6,14 @@ function navbar()
      <div class="bottom-nav__item-content">
        <img src="../img/clarity_home-solid.png" alt="" />
        <p class="act">Home</p>
-     </div>
+     </div></a>
    </div>
    <div class="bottom-nav__item">
      <a href="../HTML/YourNutrition.html"
        ><div class="bottom-nav__item-content">
          <img src="../img/message.png" alt="" />
          <p>Your Nutrionist</p>
-       </div></a
-     >
+       </div></a>
    </div>
    <div class="bottom-nav__item">
      <a href="../HTML/Account.html">
