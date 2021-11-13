@@ -62,7 +62,7 @@ body{
 }
 #menu{
     width: 328px;
-    margin: 0px auto 200px;
+    margin: 0px auto 100px;
 }
 #toggle{
     font-size: 12px;
@@ -205,12 +205,13 @@ body{
 #sticky{
     position: fixed;
     left: 0px;
-    top: 585px;
+    top: 730px;
     width: 376px;
     height: 72px;
     background: #FFFFFF;
     box-shadow: 1px 0px 3px rgba(0, 0, 0, 0.25);
 }
+
 #add-cart{
     position: absolute;
     width: 328px;
@@ -267,4 +268,11 @@ body{
 #add-cart p{
     padding: 7px 15px 0px;
     margin: 0px;
+}
+#food-menu img{
+    width: 328px;
+    height: 136px;
+    border-radius: 8px;
+    object-fit: cover;
+    object-position: 10% 40%;
 }
