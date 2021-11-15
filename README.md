@@ -50,4 +50,5 @@ Font awesome icons - (https://fontawesome.com/v4.7/)
 To use the project 
 1. Clone the repository.
 2. And then go inside the folder "Nutrition-App" using "cd Nutrition-App", Locate the file "index.html" and run it in the browser by starting Spring Boot in Intellij. Nutrition-App Backend Repository URL "https://github.com/ShubhamShegokar1/Nutrition-App-Backend"
-3. Run backend repo in Spring Boot.
+3. Create account on twillio and put authId , tokenId, phone in resources-> application.ybl file
+4. Run backend repo in Spring Boot.
